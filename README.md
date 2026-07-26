@@ -76,6 +76,7 @@ Helping developers build projects that match their goals and abilities.
 
 ---
 
+
 # ✨ Key Features
 
 ## 🤖 AI Project Generation
@@ -187,6 +188,31 @@ The AI acts as a software engineering mentor that understands:
 ---
 
 
+## 🧠 AI Feature
+
+ProjectPilot AI uses the Groq API with the Llama 3.1 8B Instant model to generate personalised software project ideas.
+
+The AI analyses the user's:
+
+- Skills
+- Interests
+- Experience level
+
+It then generates:
+
+- Project Title
+- Problem Statement
+- Key Features
+- Recommended Tech Stack
+- Development Roadmap
+
+### AI Prompt
+
+The AI is instructed to act as an expert software project mentor that creates practical, portfolio-worthy software projects tailored to each user's background.
+
+---
+
+
 # 🏗️ Application Workflow
 
 ```
@@ -208,48 +234,63 @@ Save to History / Favorites
 User Builds Project
 ```
 
----
+## 🧠 Artificial Intelligence
 
-# 🛠️ Technology Stack
+ProjectPilot AI uses the **Groq API** with the **Llama 3.1 8B Instant** large language model to generate personalized software project ideas and development plans.
 
-## Frontend Development
+### AI Provider
+- Groq
 
-| Technology    | Purpose                      |
-| ------------- | ---------------------------- |
-| React.js      | User interface development   |
-| Vite          | Fast development environment |
-| Tailwind CSS  | Modern styling               |
-| Framer Motion | Animations                   |
-| Lucide Icons  | UI icons                     |
+### AI Model
+- Llama 3.1 8B Instant (`llama-3.1-8b-instant`)
 
 ---
+  
 
-## Artificial Intelligence
+## 🛠️ Technologies Used
 
-| Technology           | Purpose              |
-| -------------------- | -------------------- |
-| Groq API             | AI model integration |
-| Large Language Model | Project generation   |
+### Frontend
+- React.js
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Lucide React
 
----
+### Artificial Intelligence
+- Groq API
+- Llama 3.1 8B Instant (`llama-3.1-8b-instant`)
 
-## Storage
+### Storage
+- Browser LocalStorage
 
-| Technology           | Purpose                     |
-| -------------------- | --------------------------- |
-| Browser LocalStorage | Store history and favorites |
+### Deployment
+- Vercel
 
----
-
-## Deployment
-
-| Service | Purpose                  |
-| ------- | ------------------------ |
-| Vercel  | Live application hosting |
-| GitHub  | Source code management   |
+### Version Control
+- Git & GitHub|
 
 ---
 
+📸 Application Screenshots
+1. Landing Page
+
+<img width="1848" height="888" alt="image" src="https://github.com/user-attachments/assets/07b53212-5363-4722-b7ad-26348fb952c9" />
+
+
+
+2. AI Generated Project Plan
+
+<img width="1328" height="888" alt="image" src="https://github.com/user-attachments/assets/c8ed2668-7a61-4fad-bebc-735d265a22e6" />
+
+
+
+
+3. History & Favorites
+
+<img width="1128" height="828" alt="image" src="https://github.com/user-attachments/assets/fc463225-04e4-412d-be39-be4523b0fdde" />
+
+
+---
 
 
 # 🚀 Live Deployment
@@ -342,6 +383,56 @@ Unlike simple project idea generators, ProjectPilot AI focuses on:
 It does not just suggest ideas — it provides a roadmap to build them.
 
 ---
+
+
+
+# ⚙️ How to Run the Project
+
+Follow these steps to run ProjectPilot AI on your local machine.
+
+## 1. Clone the Repository
+
+```bash
+git clone [https://github.com/ZohaibKhanCode/Projectpilot-ai.git]
+```
+
+## 2. Navigate to the Project Directory
+
+```bash
+cd ProjectPilot-AI
+```
+
+## 3. Install Dependencies
+
+```bash
+npm install
+```
+
+## 4. Configure Environment Variables
+
+Create a `.env` file in the project root and add your Groq API key:
+
+```env
+VITE_GROQ_API_KEY=your_groq_api_key_here
+```
+
+> You can get a Groq API key by creating an account on the Groq developer platform.
+
+## 5. Start the Development Server
+
+```bash
+npm run dev
+```
+
+## 6. Open the Application
+
+Once the server starts, open your browser and visit:
+
+```
+http://localhost:5173
+```
+
+The application is now ready to use.
 
 # 👨‍💻 Developer
 
