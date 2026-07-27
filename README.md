@@ -1,4 +1,4 @@
-# 🚀 ProjectPilot AI
+# Project Name: 🚀 ProjectPilot AI
 
 ## AI-Powered Software Project Mentor for Students & Developers
 
@@ -272,13 +272,17 @@ ProjectPilot AI uses the **Groq API** with the **Llama 3.1 8B Instant** large la
 ---
 
 📸 Application Screenshots
+
 1. Landing Page
+The screenshot of front page is given below:
+   
 
 <img width="1848" height="888" alt="image" src="https://github.com/user-attachments/assets/07b53212-5363-4722-b7ad-26348fb952c9" />
 
 
 
 2. AI Generated Project Plan
+The screenshot of AI Generated Project Plan is given below:
 
 <img width="1328" height="888" alt="image" src="https://github.com/user-attachments/assets/c8ed2668-7a61-4fad-bebc-735d265a22e6" />
 
@@ -286,6 +290,7 @@ ProjectPilot AI uses the **Groq API** with the **Llama 3.1 8B Instant** large la
 
 
 3. History & Favorites
+The screenshot of history or recent projects and favourite is given below:
 
 <img width="1128" height="828" alt="image" src="https://github.com/user-attachments/assets/fc463225-04e4-412d-be39-be4523b0fdde" />
 
