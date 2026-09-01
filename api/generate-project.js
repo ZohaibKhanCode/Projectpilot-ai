@@ -94,8 +94,8 @@ Format the response clearly using headings.
   } catch (error) {
     console.error("Groq API Error:", error);
 
-    return res.status(500).json({
-      error: error?.message || "Failed to generate project",
-    });
+   return res.status(error?.status || 500).json({
+  error: error?.message || "Failed to generate project",
+});
   }
 }
