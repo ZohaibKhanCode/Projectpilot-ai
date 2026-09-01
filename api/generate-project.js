@@ -14,6 +14,14 @@ export default async function handler(req, res) {
   try {
     const { skills, interest, experience } = req.body;
 
+    if (!process.env.GROQ_API_KEY) {
+      console.error("GROQ_API_KEY is missing");
+
+      return res.status(500).json({
+        error: "GROQ_API_KEY is not configured on the server",
+      });
+    }
+
     const prompt = `
 You are an expert software project mentor.
 
@@ -74,7 +82,11 @@ Format the response clearly using headings.
       ],
     });
 
-    const result = response.choices[0].message.content;
+    const result = response?.choices?.[0]?.message?.content;
+
+    if (!result) {
+      throw new Error("Groq returned an empty response");
+    }
 
     return res.status(200).json({
       result,
@@ -83,7 +95,7 @@ Format the response clearly using headings.
     console.error("Groq API Error:", error);
 
     return res.status(500).json({
-      error: "Failed to generate project",
+      error: error?.message || "Failed to generate project",
     });
   }
 }
